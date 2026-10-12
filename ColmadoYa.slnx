@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ColmadoYa.Api/ColmadoYa.Api.csproj" />
+    <Project Path="src/ColmadoYa.Application/ColmadoYa.Application.csproj" />
+    <Project Path="src/ColmadoYa.Domain/ColmadoYa.Domain.csproj" />
+    <Project Path="src/ColmadoYa.Infrastructure/ColmadoYa.Infrastructure.csproj" />
+    <Project Path="src/ColmadoYa.Mobile/ColmadoYa.Mobile.csproj" />
+  </Folder>
+</Solution>

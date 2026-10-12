@@ -1,0 +1,6 @@
+@ColmadoYa.Api_HostAddress = http://localhost:5168
+
+GET {{ColmadoYa.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
