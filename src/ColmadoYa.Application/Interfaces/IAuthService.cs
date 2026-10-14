@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ColmadoYa.Application.DTOs.Auth;
 
-namespace ColmadoYa.Application.Interfaces
+namespace ColmadoYa.Application.Interfaces;
+
+public interface IAuthService
 {
-    internal interface IAuthService
-    {
-    }
+    Task<AuthResponse> RegistrarAsync(RegisterRequest request, CancellationToken ct = default);
+    Task<AuthResponse> LoginAsync(LoginRequest request, CancellationToken ct = default);
 }

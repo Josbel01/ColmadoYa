@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ColmadoYa.Domain.Entities;
 
-namespace ColmadoYa.Application.Interfaces
+namespace ColmadoYa.Application.Interfaces;
+
+public record TokenGenerado(string Token, DateTime ExpiraEn);
+
+public interface IJwtTokenGenerator
 {
-    internal interface IJwtTokenGenerator
-    {
-    }
+    TokenGenerado Generar(Usuario usuario);
 }

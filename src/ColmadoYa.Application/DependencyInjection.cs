@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ColmadoYa.Application.Interfaces;
+using ColmadoYa.Application.Services;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace ColmadoYa.Application
+namespace ColmadoYa.Application;
+
+public static class DependencyInjection
 {
-    internal class DependencyInjection
+    public static IServiceCollection AddApplication(this IServiceCollection services)
     {
+        services.AddScoped<IAuthService, AuthService>();
+        return services;
     }
 }
