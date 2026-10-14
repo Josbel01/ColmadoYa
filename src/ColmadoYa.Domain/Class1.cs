@@ -1,6 +1,10 @@
-﻿namespace ColmadoYa.Domain;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Class1
+namespace ColmadoYa.Domain
 {
-
+    internal class Class1
+    {
+    }
 }
